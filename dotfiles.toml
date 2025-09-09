@@ -23,23 +23,18 @@
 
 [packages]
 ignored = [
-	"base", "base-devel", "linux", "linux-firmware", "efibootmgr", "intel-ucode",
-	"btrfs-progs", "snapper", "grub", "grub-btrfs", "zram-generator",
-	"bluez", "bluez-utils", "networkmanager", "libpulse", "sof-firmware",
+	"base", "base-devel", "linux", "linux-firmware", "efibootmgr",
+	"btrfs-progs", "zram-generator",
+	"bluez", "bluez-utils", "networkmanager", "libpulse",
 	"pipewire", "pipewire-alsa", "pipewire-jack", "pipewire-pulse", "gst-plugin-pipewire", "wireplumber",
-	"paru", "paru-debug", "symm", "downgrade",
-	"qemu-desktop", "virt-manager", "dnsmasq",
-	"steam", "dbeaver",
+	"paru", "paru-debug", "symm"
 ]
 
-playwright_workaround = ["enchant"]
-lsp = ["gitlab-ci-ls"]
-
-
 fonts = ["noto-fonts", "noto-fonts-cjk", "noto-fonts-emoji", "ttf-jetbrains-mono-nerd"]
-nvidia = ["nvidia", "nvidia-utils"]
 
-apps = ["firefox", "google-chrome", "obs-studio", "telegram-desktop"]
+apps = ["firefox", "google-chrome", "obs-studio", "telegram-desktop", "blender"]
+
+amd = ["amd-ucode", "vulkan-radeon", "vulkan-tools"]
 
 terminal = [
   "alacritty", "zellij", "neovim", "fish", "starship", "fastfetch",
